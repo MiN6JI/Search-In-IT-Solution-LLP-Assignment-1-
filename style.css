@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f7ff;
+}
+
+.container {
+    width: 1250px;
+    height: 700px;
+    margin: 40px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.left_container {
+    padding: 10px;
+    background-color: #fff;
+    text-align: center;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 320px 320px;
+    grid-template-columns: 250px 250px 250px;
+    column-gap: 25px;
+    row-gap: 15px;
+}
+
+.left_container .box img {
+    width: 150px;
+}
+
+.left_container .box {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left_container button {
+    width: 100px;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #E0144C;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+.right_container {
+    width: 380px;
+    height: 450px;
+    padding: 20px;
+    border: 1px solid #EEEEEE;
+    border-radius: 10px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.right_container table, tbody, tr {
+    text-align: center;
+    border-collapse: collapse;
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.right_container table, tbody,th {
+    padding: 15px 0;
+    color: #DDDDDD;
+}
+
+.right_container table, tbody,td {
+    padding: 15px 0;
+    font-size: 0.95em;
+    font-weight: 500;
+    color: black;
+}
+
+.right_container .cost {
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.right_container button {
+    width: 80%;
+    height: 40px;
+    position: relative;
+    left: 40px;
+    border: 1px solid #E0144C;
+    background-color: #E0144C ;
+    color: white;
+    border-radius: 5px;
+}
+
+footer {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.7em;
+    background-color: #fff;
+}
+
+/* HOVER EFFECT */
+
+.left_container button:hover {
+    background: #E0144C;
+    color: white;
+}
+
+.left_container .box:hover {
+  box-shadow: 0 0 20px rgba(33,33,33,.2); 
+}
+
+.right_container button:hover{
+    background: #cc0e41;
+    color: white;
+}
